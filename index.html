@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>حذف الحساب | خِدمتي</title>
+
+  <meta
+    name="description"
+    content="صفحة طلب حذف الحساب والبيانات المرتبطة بتطبيق خِدمتي."
+  >
+
+  <style>
+    :root {
+      --primary: #004aad;
+      --primary-dark: #003b8f;
+      --text: #172033;
+      --muted: #657089;
+      --bg: #f5f8ff;
+      --card: #ffffff;
+      --border: #e2e8f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Tahoma", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 50px 0 42px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.92;
+      font-size: 17px;
+    }
+
+    main {
+      padding: 30px 0 50px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 30px rgba(0, 35, 90, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 23px;
+    }
+
+    ol,
+    ul {
+      padding-right: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .notice {
+      background: #eef5ff;
+      border-right: 5px solid var(--primary);
+      padding: 16px 18px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    .contact {
+      background: #f0f6ff;
+      border: 1px solid #d8e6ff;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 20px 0 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>حذف الحساب</h1>
+      <p>تطبيق خِدمتي (Khadem)</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- كيفية طلب الحذف -->
+    <section class="card">
+
+      <h2>كيفية طلب حذف الحساب</h2>
+
+      <p>
+        إذا كنت ترغب في حذف حسابك والبيانات المرتبطة به من تطبيق خِدمتي،
+        يمكنك إرسال طلب حذف الحساب إلى بريد الدعم الموضح أدناه.
+      </p>
+
+      <ol>
+        <li>
+          أرسل رسالة من بريدك الإلكتروني إلى بريد الدعم.
+        </li>
+
+        <li>
+          اكتب في عنوان الرسالة:
+          <strong>طلب حذف حساب خِدمتي</strong>
+        </li>
+
+        <li>
+          اذكر البريد الإلكتروني المستخدم في حساب خِدمتي.
+        </li>
+
+        <li>
+          قد نطلب معلومات إضافية للتحقق من ملكية الحساب وحماية حسابك.
+        </li>
+
+        <li>
+          بعد التحقق من الطلب، سيتم التعامل معه وفق سياسة حذف البيانات
+          الموضحة في هذه الصفحة.
+        </li>
+      </ol>
+
+      <div class="contact">
+        <strong>بريد الدعم:</strong>
+        <br>
+
+        <a href="mailto:jovanierwen656@gmail.com">
+          jovanierwen656@gmail.com
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- البيانات التي يتم حذفها -->
+    <section class="card">
+
+      <h2>البيانات التي يتم حذفها</h2>
+
+      <p>
+        عند تنفيذ طلب حذف الحساب، يتم حذف البيانات الشخصية المرتبطة
+        بحساب المستخدم، والتي قد تشمل:
+      </p>
+
+      <ul>
+        <li>حساب المستخدم في Firebase Authentication.</li>
+
+        <li>
+          بيانات الملف الشخصي المرتبطة بالحساب.
+        </li>
+
+        <li>
+          الاسم وبيانات الملف الشخصي المخزنة للحساب.
+        </li>
+
+        <li>
+          أرقام الهاتف المرتبطة بالحساب، عند وجودها.
+        </li>
+
+        <li>
+          صورة الملف الشخصي، عند وجودها.
+        </li>
+
+        <li>
+          بيانات التوافر والمواعيد المرتبطة بحساب المستخدم.
+        </li>
+      </ul>
+
+    </section>
+
+
+    <!-- بيانات المحادثات -->
+    <section class="card">
+
+      <h2>المحادثات والرسائل</h2>
+
+      <p>
+        قد تكون بعض الرسائل التي أرسلها المستخدم موجودة ضمن محادثات
+        مرتبطة بمستخدمين آخرين في التطبيق.
+      </p>
+
+      <p>
+        حذف الحساب لا يعني بالضرورة حذف نسخة من رسالة موجودة في
+        سجل محادثة مستخدم آخر، إذا كان الاحتفاظ بها ضروريًا لاستمرار
+        سجل المحادثة.
+      </p>
+
+    </section>
+
+
+    <!-- الاحتفاظ بالبيانات -->
+    <section class="card">
+
+      <h2>البيانات التي قد يتم الاحتفاظ بها</h2>
+
+      <p>
+        قد يتم الاحتفاظ ببيانات محدودة فقط عندما يكون ذلك ضروريًا
+        للالتزامات القانونية أو لأغراض أمنية ومنع إساءة الاستخدام،
+        وذلك للمدة المطلوبة فقط.
+      </p>
+
+      <p>
+        بخلاف ذلك، لا يتم الاحتفاظ بالبيانات الشخصية المرتبطة بالحساب
+        لفترة أطول من اللازم بعد تنفيذ طلب الحذف.
+      </p>
+
+    </section>
+
+
+    <!-- مدة التنفيذ -->
+    <section class="card">
+
+      <h2>مدة تنفيذ طلب الحذف</h2>
+
+      <p>
+        تتم معالجة طلب حذف الحساب بعد التحقق من ملكية الحساب.
+        قد تستغرق عملية المراجعة والتنفيذ بعض الوقت حسب البيانات
+        والخدمات المرتبطة بالحساب.
+      </p>
+
+      <p>
+        في حال وجود بيانات يجب الاحتفاظ بها لفترة محددة بسبب
+        المتطلبات القانونية أو الأمنية، سيتم حذفها عند انتهاء
+        فترة الاحتفاظ المطلوبة.
+      </p>
+
+    </section>
+
+
+    <!-- التواصل -->
+    <section class="card">
+
+      <h2>التواصل</h2>
+
+      <p>
+        إذا كان لديك أي سؤال متعلق بحذف الحساب أو بياناتك،
+        يمكنك التواصل معنا عبر البريد الإلكتروني:
+      </p>
+
+      <div class="contact">
+
+        <strong>بريد الدعم:</strong>
+        <br>
+
+        <a href="mailto:jovanierwen656@gmail.com">
+          jovanierwen656@gmail.com
+        </a>
+
+        <br><br>
+
+        <strong>عنوان الرسالة:</strong>
+        طلب حذف حساب خِدمتي
+
+      </div>
+
+    </section>
+
+
+    <!-- معلومات التطبيق -->
+    <section class="card">
+
+      <h2>معلومات التطبيق</h2>
+
+      <p>
+        <strong>اسم التطبيق:</strong>
+        خِدمتي (Khadem)
+      </p>
+
+      <p>
+        <strong>الغرض من هذه الصفحة:</strong>
+        استقبال طلبات حذف الحساب والبيانات المرتبطة به.
+      </p>
+
+      <p>
+        <strong>آخر تحديث:</strong>
+        سبتمبر 2026
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    © 2026 خِدمتي (Khadem). جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
